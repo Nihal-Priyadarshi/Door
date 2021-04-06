@@ -1,3 +1,4 @@
+@media screen and (min-width: 701px){
 *{
     margin: 0;
     padding: 0;
@@ -127,6 +128,7 @@ h1{
 .message h1{
     visibility: hidden;
 }
+}
 @media screen and (max-width: 1300px){
     h1{
         font-size: 1.5em;
@@ -143,6 +145,25 @@ h1{
     }
     .message h1{
         visibility: visible;
+    }
+    h1{
+    font-size: 2em;
+    font-family: cursive;
+    color: springgreen;
+    animation: animate1 4s linear infinite;
+    text-shadow: 2px  3px violet;
+    cursor: default;
+    }
+    @keyframes animate1{
+        0%,50%,100%{
+            transform: translateY(0px);
+        }
+        25%{
+            transform: translateY(-20px);
+        }
+        75%{
+            transform: translateY(20px);
+        }
     }
 }
 .message{
